@@ -1,0 +1,5 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <app-customer-table [customers]="customers" (setSelectedId)="onSelectedCustomer($event)"></app-customer-table>
+  <app-customer-detail [selectedid]="selectedid" [customerDetailRecords]="customerDetailRecords"></app-customer-detail>
+</div>
