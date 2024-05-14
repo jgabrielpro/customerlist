@@ -1,0 +1,22 @@
+<h3>Customer List</h3>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Age</th>
+      <th></th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let cust of customers">
+        <td>{{ cust.firstName }}</td>
+        <td>{{ cust.lastName }}</td>
+        <td>{{ cust.age }}</td>
+        <td>
+          <button (click)="onSelectedCustomer(cust)">View Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

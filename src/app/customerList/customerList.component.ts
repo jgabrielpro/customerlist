@@ -5,10 +5,10 @@ import { customer } from "../Interface/customer";
 
 @Component({
   selector: "app-customer-table",
-  templateUrl: "./customerTable.component.html",
-  styleUrls: ["./customerTable.component.scss"],
+  templateUrl: "./customerList.component.html",
+  styleUrls: ["./customerList.component.scss"],
 })
-export class CustomerTableComponent {
+export class CustomerListComponent {
   @Input() customers: customer[];
   @Output() setSelectedId: EventEmitter<string> = new EventEmitter<string>();
 
